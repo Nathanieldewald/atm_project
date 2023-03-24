@@ -90,11 +90,11 @@ while True:
         print("Your availible balance: $",current_balance(1))
         withdrawl_amount_input = input("Please enter the amount you would like to withdrawl\n")
         if isfloat(withdrawl_amount_input):
-            withdrawl_amount = -abs(float(withdrawl_amount_input))
+            withdrawl_amount = float(withdrawl_amount_input)
             if withdrawl_amount < 0:
                 print("Invalid entry, deposit amount cannot be negative.")
             else:
-                atm_transaction(withdrawl_amount)
+                atm_transaction(-abs(withdrawl_amount))
                 print("Current balance: $",current_balance(1))
         else:
             print("Invalid entry, please try again")
