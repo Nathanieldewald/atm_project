@@ -51,11 +51,16 @@ def check_atm_history(limit=10):
         transactions = atm_history.readlines()
     return transactions[-limit:]
 
+def isfloat(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
 
 # menu loop 
 while True:
-    menu = int(input(
-    "Welcome to Nate's ATM!!!\n\
+    menu = int(input("Welcome to Nate's ATM!!!\n\
     Please select from the following options\n\
     1) View balance\n\
     2) Deposit money\n\
@@ -69,16 +74,31 @@ while True:
 
     # deposit
     elif menu == 2:
-        deposit_amount = float(input("Please enter the amount you would like to deposit\n"))
-        atm_transaction(deposit_amount)
-        print("Current balance: $",current_balance(1))
+        deposit_amount_input = input("Please enter the amount you would like to deposit\n")
+        if isfloat(deposit_amount_input):
+            deposit_amount = float(deposit_amount_input)
+            if deposit_amount < 0:
+                print("Invalid entry, deposit amount cannot be negative.")
+            else:
+                atm_transaction(deposit_amount)
+                print("Current balance: $",current_balance(1))
+        else:
+            print("Invalid entry, please try again")
 
     # withdrawl
     elif menu == 3:
         print("Your availible balance: $",current_balance(1))
-        withdrawl_amount = -abs(float(input("Please enter the amount you would like to withdrawl\n")))
-        atm_transaction(withdrawl_amount)
-        print("Current balance: $",current_balance(1))
+        withdrawl_amount_input = input("Please enter the amount you would like to withdrawl\n")
+        if isfloat(withdrawl_amount_input):
+            withdrawl_amount = -abs(float(withdrawl_amount_input))
+            if withdrawl_amount < 0:
+                print("Invalid entry, deposit amount cannot be negative.")
+            else:
+                atm_transaction(withdrawl_amount)
+                print("Current balance: $",current_balance(1))
+        else:
+            print("Invalid entry, please try again")
+        
         
     # transaction history
     elif menu == 4:
@@ -92,3 +112,5 @@ while True:
     # invalid entry
     else:
         print("Invalid entry, please try again.")
+
+
