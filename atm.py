@@ -22,10 +22,10 @@ def balance_update(transaction):
 
 # updates atm_history.txt
 def atm_history_update(transaction):
-    transaction = str(transaction)
+    new_balance = balance_update(transaction)
     with open("atm_history.txt", "a") as atm_history:
-        transaction = {transaction:"transaction", balance_update(transaction):"Balance", date_and_time():"datetime"}
-        atm_history.writelines(str(transaction))
+        transaction_entry = f"{date_and_time()} | {'Deposit' if transaction >= 0 else 'Withdrawal'}: {abs(transaction)} | Balance: {new_balance}\n"
+        atm_history.writelines(str(transaction_entry))
         atm_history.writelines("\n")
 
 
@@ -46,11 +46,10 @@ def current_balance(balance_check):
             
 
 # check atm.history
-def check_atm_history():
+def check_atm_history(limit=10):
     with open("atm_history.txt", "r") as atm_history:
         transactions = atm_history.readlines()
-        for i in transactions:
-            print("$",i)
+    return transactions[-limit:]
 
 
 # menu loop 
@@ -83,8 +82,10 @@ while True:
         
     # transaction history
     elif menu == 4:
-        check_atm_history()
-    # exit
+        transactions = check_atm_history(limit=10)
+        transaction_history = "\n".join(transactions)
+        print("Transaction History\n", transaction_history)
+    
     elif menu == 5:
         print("Thank you for using Nate's ATM! Goodbye!")
         break

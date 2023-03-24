@@ -1,42 +1,14 @@
-transactiondatetime
-transactiondatetime
-300.0datetime
-3000.0{'400.0': 'transaction', datetime.datetime(2023, 3, 23, 10, 59, 45, 91755): 'datetime'}
-{'300.0': 'transaction', datetime.datetime(2023, 3, 23, 11, 2, 38, 459483): 'datetime'}
-{'400.0': 'transaction', '9032.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 7, 18, 37526): 'datetime'}
-{'200.0': 'transaction', '9432.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 8, 4, 31009): 'datetime'}
-{'400.0': 'transaction', '9832.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 9, 10, 117822): 'datetime'}
-{'-9832.0': 'transaction', '0.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 9, 34, 84568): 'datetime'}
-{'200.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 9, 45, 387007): 'datetime'}
-{'-200.0': 'transaction', '0.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 9, 50, 674788): 'datetime'}
-{'4000.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 14, 54, 243986): 'datetime'}
-{'300.0': 'transaction', '4300.0': 'Balance', datetime.datetime(2023, 3, 23, 11, 16, 55, 7175): 'datetime'}
-{'-23.23': 'transaction', '4276.77': 'Balance', datetime.datetime(2023, 3, 23, 11, 17, 6, 519931): 'datetime'}
-{'300.0': 'transaction', '4576.77': 'Balance', datetime.datetime(2023, 3, 23, 12, 58, 12, 502125): 'datetime'}
-{'-5.0': 'transaction', '4571.77': 'Balance', datetime.datetime(2023, 3, 23, 13, 8, 51, 428370): 'datetime'}
-{'1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 12, 106280): 'datetime'}
-{'-1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 16, 485720): 'datetime'}
-{'-1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 17, 790608): 'datetime'}
-{'-1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 19, 963505): 'datetime'}
-{'-1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 20, 504386): 'datetime'}
-{'-1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 18, 20, 963176): 'datetime'}
-{'-77.00000000004': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 19, 8, 214616): 'datetime'}
-{'-77.00000000004': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 19, 10, 874589): 'datetime'}
-{'-77.00000000004': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 19, 11, 498930): 'datetime'}
-{'-77.00000000004': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 19, 12, 97642): 'datetime'}
-{'1000.0': 'transaction', None: 'Balance', datetime.datetime(2023, 3, 23, 13, 19, 54, 650750): 'datetime'}
-{'200.0': 'transaction', '1463.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 16, 0, 41, 717993): 'datetime'}
-{'200.0': 'transaction', '1663.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 16, 1, 43, 134974): 'datetime'}
-{'0.0': 'transaction', '1663.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 16, 5, 15, 787771): 'datetime'}
-{'200.0': 'transaction', '1863.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 16, 38, 45, 555143): 'datetime'}
-{'200': 'transaction', '2063.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 18, 41, 13, 379258): 'datetime'}
-{'200.0': 'transaction', '2263.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 18, 59, 27, 27621): 'datetime'}
-{'200.0': 'transaction', '2463.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 6, 16, 498754): 'datetime'}
-{'200.0': 'transaction', '2663.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 10, 31, 553652): 'datetime'}
-{'200.0': 'transaction', '2863.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 11, 32, 330584): 'datetime'}
-{'200.0': 'transaction', '3063.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 18, 40, 250330): 'datetime'}
-{'-200.0': 'transaction', '2863.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 18, 54, 336893): 'datetime'}
-{'300.0': 'transaction', '3163.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 19, 20, 794053): 'datetime'}
-{'200.0': 'transaction', '3363.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 22, 28, 288311): 'datetime'}
-{'-100.0': 'transaction', '3263.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 22, 44, 926884): 'datetime'}
-{'300.0': 'transaction', '3563.7699999998404': 'Balance', datetime.datetime(2023, 3, 23, 19, 23, 59, 976155): 'datetime'}
+2023-03-24 10:13:26.996030 | Deposit: 343.0 | Balance: 343.0
+
+2023-03-24 10:13:30.146408 | Withdrawal: 2.0 | Balance: 341.0
+
+2023-03-24 10:13:32.460688 | Withdrawal: 2.0 | Balance: 339.0
+
+2023-03-24 10:13:34.953847 | Deposit: 343.0 | Balance: 682.0
+
+2023-03-24 10:13:36.901850 | Withdrawal: 2132.0 | Balance: None
+
+2023-03-24 10:13:39.792416 | Deposit: 2323.0 | Balance: 3005.0
+
+2023-03-24 10:13:43.148125 | Withdrawal: 232.0 | Balance: 2773.0
+
